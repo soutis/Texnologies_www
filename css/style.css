@@ -1,0 +1,146 @@
+@import url(http://fonts.googleapis.com/css?family=Fjalla+One);
+
+
+body 
+{
+font-family: "Fjalla One", sans-serif;
+background-image:url('http://fastgrowthclub.com/wp-content/uploads/2013/04/blackboard.jpg');
+background-color:#b0c4de;
+}
+
+
+
+h1 {
+  color : white;   
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 1em;
+}
+
+div {
+    
+  margin: 70px auto;
+  width: 580px;
+}
+
+p{
+  
+    color:white;
+    font-size: 1.5em;
+  margin-bottom: 1em;
+}
+
+th{
+    color:white;
+}
+
+td{
+    color:white;
+}
+
+title{
+    color:white;
+}
+
+a:link {color:white;}      /* unvisited link */
+a:visited {color:yellow;}  /* visited link */
+a:hover {color:#FF00FF;}  /* mouse over link */
+a:active {color:#0000FF;}  /* selected link */
+
+
+aside.sticker {
+  margin: 20px;
+  font-size: 20px;
+  text-shadow: 0px 0px 3px rgba(0,0,0,0.4);
+  color: black;
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+  border-radius: 100%;
+  background: -webkit-linear-gradient(135deg, transparent 32px, #aaa 20px, #eee);
+  text-align: center;
+  padding-top: 40px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+aside.sticker:after {
+  content: " ";
+  display: block;
+  border-radius: 100%;
+  background: -webkit-linear-gradient(135deg, transparent 110px, #000 100px,#666 100px, #fff 85%);
+  box-shadow: -3px -3px 15px 1px rgba(0, 0, 0, 0.2);
+  width: 100px;
+  height: 100px;
+  margin-left: 56px;
+  margin-top: -4px;
+}
+
+aside.sticker.green {
+  color: white;
+  background: -webkit-linear-gradient(135deg, transparent 32px, #46a82d 20px, #70c757);
+  background: -ms-linear-gradient(135deg, transparent 32px, #46a82d 20px, #70c757);
+  background: -moz-linear-gradient(135deg, transparent 32px, #46a82d 20px, #70c757);
+
+}
+
+aside.sticker.cyan {
+  color: white;
+  background: -webkit-linear-gradient(135deg, transparent 32px, #2d8aa6 20px, #57b1c7);
+  background: -ms-linear-gradient(135deg, transparent 32px, #2d8aa6 20px, #57b1c7);
+  background: -moz-linear-gradient(135deg, transparent 32px, #2d8aa6 20px, #57b1c7);
+  
+}
+
+
+.classname {
+	-moz-box-shadow:inset 0px 1px 0px 0px #f9eca0;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #f9eca0;
+	box-shadow:inset 0px 1px 0px 0px #f9eca0;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #f0c911), color-stop(1, #f2ab1e) );
+	background:-moz-linear-gradient( center top, #f0c911 5%, #f2ab1e 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f0c911', endColorstr='#f2ab1e');
+	background-color:#f0c911;
+	-webkit-border-top-left-radius:37px;
+	-moz-border-radius-topleft:37px;
+	border-top-left-radius:37px;
+	-webkit-border-top-right-radius:0px;
+	-moz-border-radius-topright:0px;
+	border-top-right-radius:0px;
+	-webkit-border-bottom-right-radius:37px;
+	-moz-border-radius-bottomright:37px;
+	border-bottom-right-radius:37px;
+	-webkit-border-bottom-left-radius:0px;
+	-moz-border-radius-bottomleft:0px;
+	border-bottom-left-radius:0px;
+	text-indent:0;
+	border:1px solid #e65f44;
+	display:inline-block;
+	color:#c92200;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	font-style:italic;
+	height:65px;
+	line-height:65px;
+	width:131px;
+	text-decoration:none;
+	text-align:center;
+	text-shadow:1px 1px 0px #ded17c;
+        float : right;
+}
+.classname:hover {
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #f2ab1e), color-stop(1, #f0c911) );
+	background:-moz-linear-gradient( center top, #f2ab1e 5%, #f0c911 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f2ab1e', endColorstr='#f0c911');
+	background-color:#f2ab1e;
+}.classname:active {
+	position:relative;
+	top:1px;
+}
+
+
+
+
+
+
+
