@@ -5,11 +5,11 @@
 --%>
 <%@ page import ="java.sql.*" %>
 <link rel="stylesheet" type="text/css" href="css/style.css" />
-<%
+<%  request.setCharacterEncoding("UTF-8");
     String fname=  session.getAttribute("UserName").toString();
     
    Class.forName("com.mysql.jdbc.Driver");
-   Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/users_base","root","");
+   Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/Users?useUnicode=true&characterEncoding=UTF-8","root","%so11333");
     
     Statement st = conn.createStatement();
     

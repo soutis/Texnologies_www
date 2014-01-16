@@ -6,7 +6,7 @@
 <%@ page import="java.sql.*" %>
 
 
-<%
+<%  request.setCharacterEncoding("UTF-8");
      
     String fname = request.getParameter("fname");
     String lname = request.getParameter("lname");
@@ -15,7 +15,7 @@
     String email = request.getParameter("email");
     
     Class.forName("com.mysql.jdbc.Driver");
-    Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/users_base","root","");
+    Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/Users?useUnicode=true&characterEncoding=UTF-8","root","%so11333");
     
     Statement st = conn.createStatement();
     

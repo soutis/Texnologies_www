@@ -3,10 +3,11 @@
     Created on : Jan 9, 2014, 4:24:14 PM
     Author     : vasilis
 --%>
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
-<%@ page import ="java.sql.*" %>
 
-<%
+<%@ page import ="java.sql.*" %>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+
+<%  request.setCharacterEncoding("UTF-8");
     if ((session.getAttribute("UserName") == null) || (session.getAttribute("UserName") == "")) {
 %>
 

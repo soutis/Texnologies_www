@@ -4,12 +4,12 @@
     Author     : vasilis
 --%>
 <%@ page import ="java.sql.*" %>
-<%
+<%  request.setCharacterEncoding("UTF-8");
     String userid = request.getParameter("uname");   
     String pwd = request.getParameter("pass");
     
    Class.forName("com.mysql.jdbc.Driver");
-   Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/users_base","root","");
+   Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/Users?useUnicode=true&characterEncoding=UTF-8","root","%so11333");
     
     Statement st = conn.createStatement();
     
