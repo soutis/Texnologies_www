@@ -13,9 +13,9 @@
         
     </head>
     <body>
-         <form action="post_data.jsp" method="post">
+         <form action="Post_Data" method="post">
             <p>  Add your sticker below:  </p> <br />
-            <input name="comments" placeholder="Post your sticker of 200 maximum characters" id="comments" style="width:700px;height:80px;background-color:#D0F18F;color:#000000;font:24px/30px cursive;"   /> 
+            <input name="comments" required="" placeholder="Post your sticker of 200 maximum characters" id="comments" style="width:700px;height:80px;background-color:#D0F18F;color:#000000;font:24px/30px cursive;"   /> 
             <br />
         <input type="submit" value="Submit" style="background-color:#53760D;color:#D0F18F;" />
        </form>

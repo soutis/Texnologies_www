@@ -11,11 +11,11 @@
         <link rel="stylesheet" type="text/css" href="css/style.css" /> 
         <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Example</title>
+        
     </head>
      <body>
         
-        <form method="post" action="login.jsp" >
+        <form method="post" action="LLogin" >
             <center>
             <table border="1" width="30%" cellpadding="3">
                 <thead>

@@ -18,7 +18,8 @@
     rs = st.executeQuery("select * from stickers where UserName='" +  fname + "'");
     
     while(rs.next()){
-        String sticker = rs.getString(2);
+        String id = rs.getString(1);
+        String sticker = rs.getString(3);
     
     
 %>    
@@ -30,13 +31,23 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         
     <body>
-        <p> <%=sticker%>  </p>
-    </body>
-</html>
+        
+        <p> <%= id %>.  <%=sticker%>  </p>
+   
 
 
 <%  }  %>
 
-<p> <a href='post_sticker.jsp'>Post a sticker </a>    </p>
-<p> <a href='logout.jsp'>Log out</a>  </p>
-<a class="classname">Delete</a>
+       <p> <a href='post_sticker.jsp'>Post a sticker </a>    </p>
+       <p> <a href='logout.jsp'>Log out</a>  </p>
+
+
+      <form action="Delete_Data" method="post">
+         <input name="delete" required="" placeholder="Enter the ID post to delete" id="delete" style="width:500px;height:50px;background-color:#D0F18F;color:#000000;font:24px/30px cursive;"   /> 
+         <br />
+        <input type="submit" value="Submit" style="background-color:#53760D;color:#D0F18F;" />
+      </form>
+
+
+ </body>
+</html>
