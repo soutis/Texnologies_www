@@ -19,6 +19,10 @@
         <p>Registration is Successful!!!<p>
         
         <p> Please Login Here <a href='login_form.jsp'>Go to Login</a> </p>
+        
+        <div id="footer">
+            <h8>Web Designed by Vasilis Soutis  &copy 2014 </h8>
+        </div>
        
        
     </body>

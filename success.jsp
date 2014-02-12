@@ -117,12 +117,18 @@ document.write("You are here for <b>" + amt() + " times.");
  
         <input type="button" onclick="DeleteCookie('count')" value="Reset Cookie Counter"/>
         
-        <h1> <a href='dashboard.jsp'> Check your dashboard </a>  </h1>    
+        <h1> <a href='dashboard.jsp'> Check your private dashboard </a>  </h1> 
+        <h1> <a href='dashboard_News.jsp'> Check the News dashboard </a>  </h1>
+        <h1> <a href='dashboard_Social.jsp'> Check the Social dashboard </a>  </h1>
+        <h1> <a href='dashboard_Tech.jsp'> Check the Tech dashboard </a>  </h1>
+        <h1> <a href='dashboard_Sports.jsp'> Check the Sports dashboard </a>  </h1>
         <h1> <a href='post_sticker.jsp'>Post a sticker </a>    </h1>    
         <p><a href='logout.jsp'>Log out</a> </p>
         
         
-        
+        <div id="footer">
+            <h8>Web Designed by Vasilis Soutis  &copy 2014 </h8>
+        </div>
        
        
     </body>

@@ -1,0 +1,115 @@
+body 
+{
+font-family: "Fjalla One", sans-serif;
+background: url(../images/blackboard.jpg)  no-repeat center center fixed; 
+-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+   background-size: cover;
+   
+}
+
+#footer {
+	width:100%;
+	height:50px;
+	position:absolute;
+	bottom:0;
+	left:0;
+	background-color:   #404D59;
+        color:	#FFFFFF;
+        border-top: 1px solid rgba(0, 0, 0, 0.15);
+        box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1) inset;
+}
+
+
+
+p{
+  
+    color:white;
+    font-size: 1.5em;
+  margin-bottom: 1em;
+}
+
+h8 {
+  padding-left:1.5%;  
+  color : white;   
+  text-align: left;
+  font-size: 2em;
+  margin-bottom: 1em;
+}
+
+h9 {  
+  color : white;   
+  text-align: left;
+  font-size: 1em;
+  margin-bottom: 1em;
+}
+
+
+#stick {
+  margin: 70px auto;
+  width: 580px;
+}
+
+
+aside.sticker {
+  margin: 20px;
+  font-size: 20px;
+  text-shadow: 0px 0px 3px rgba(0,0,0,0.4);
+  color: black;
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+  border-radius: 100%;
+  background: -webkit-linear-gradient(135deg, transparent 32px, #aaa 20px, #eee);
+  text-align: center;
+  padding-top: 40px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+aside.sticker:after {
+  content: " ";
+  display: block;
+  border-radius: 100%;
+  background: -webkit-linear-gradient(135deg, transparent 110px, #000 100px,#666 100px, #fff 85%);
+  box-shadow: -3px -3px 15px 1px rgba(0, 0, 0, 0.2);
+  width: 100px;
+  height: 100px;
+  margin-left: 56px;
+  margin-top: -4px;
+}
+
+
+aside.sticker.green {
+  color: white;
+  background: -webkit-linear-gradient(135deg, transparent 32px, #46a82d 20px, #70c757);
+  background: -ms-linear-gradient(135deg, transparent 32px, #46a82d 20px, #70c757);
+  background: -moz-linear-gradient(135deg, transparent 32px, #46a82d 20px, #70c757);
+
+}
+
+aside.sticker.cyan {
+  color: white;
+  background: -webkit-linear-gradient(135deg, transparent 32px, #2d8aa6 20px, #57b1c7);
+  background: -ms-linear-gradient(135deg, transparent 32px, #2d8aa6 20px, #57b1c7);
+  background: -moz-linear-gradient(135deg, transparent 32px, #2d8aa6 20px, #57b1c7);
+  
+}
+
+aside.sticker.yellow {
+  color: white;
+  background: -webkit-linear-gradient(135deg, transparent 32px, #a69c2e 20px, #c7b857);
+  background: -ms-linear-gradient(135deg, transparent 32px, #a69c2e 20px, #c7b857);
+  background: -moz-linear-gradient(135deg, transparent 32px, #a69c2e 20px, #c7b857);
+}
+aside.sticker.pink {
+  color: white;
+  background: -webkit-linear-gradient(135deg, transparent 32px, #8e2ea6 20px, #b457c7);
+  background: -ms-linear-gradient(135deg, transparent 32px, #8e2ea6 20px, #b457c7);
+  background: -moz-linear-gradient(135deg, transparent 32px, #8e2ea6 20px, #b457c7);
+}
+
+a:link {color:white;}      /* unvisited link */
+a:visited {color:yellow;}  /* visited link */
+a:hover {color:#FF00FF;}  /* mouse over link */
+a:active {color:#0000FF;}  /* selected link */

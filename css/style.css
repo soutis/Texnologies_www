@@ -4,8 +4,42 @@
 body 
 {
 font-family: "Fjalla One", sans-serif;
-background-image:url('http://fastgrowthclub.com/wp-content/uploads/2013/04/blackboard.jpg');
-background-color:#b0c4de;
+background: url(../images/kimwlia.jpg)  no-repeat center center fixed; 
+-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+   background-size: cover;
+   
+}
+
+#footer {
+	width:100%;
+	height:50px;
+	position:absolute;
+	bottom:0;
+	left:0;
+	background-color:   #404D59;
+        color:	#FFFFFF;
+        border-top: 1px solid rgba(0, 0, 0, 0.15);
+        box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1) inset;
+}
+
+h8 {
+  padding-left:1.5%;  
+  color : white;   
+  text-align: left;
+  font-size: 2em;
+  margin-bottom: 1em;
+}
+
+h10 {
+    
+   
+  color : white;   
+  text-align: left;
+  font-size: 1.5em;
+  margin-bottom: 1em;
+    
 }
 
 
@@ -17,11 +51,7 @@ h1 {
   margin-bottom: 1em;
 }
 
-div {
-    
-  margin: 70px auto;
-  width: 580px;
-}
+
 
 p{
   
@@ -137,8 +167,6 @@ aside.sticker.cyan {
 	position:relative;
 	top:1px;
 }
-
-
 
 
 

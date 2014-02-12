@@ -53,5 +53,9 @@
             </table>
             </center>
         </form>
+        <div id="footer">
+            <h8>Web Designed by Vasilis Soutis  &copy 2014 </h8>
+        </div>
+        
     </body>
 </html>

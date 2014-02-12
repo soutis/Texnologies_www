@@ -13,5 +13,9 @@
     </head>
     <body>
        <p> Username is already used.Register with another one.. <a href='reg.jsp'>Go to Register</a> </p>
+       
+       <div id="footer">
+            <h8>Web Designed by Vasilis Soutis  &copy 2014 </h8>
+       </div>
     </body>
 </html>

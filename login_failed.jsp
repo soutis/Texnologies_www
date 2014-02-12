@@ -12,6 +12,9 @@
         
     <body>
         <p> Invalid credentials.Please try again.. <a href='login_form.jsp'>Go to Login</a> </p>
+        <div id="footer">
+            <h8>Web Designed by Vasilis Soutis  &copy 2014 </h8>
+        </div>
     </body>
 </html>
         

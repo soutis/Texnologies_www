@@ -1,24 +1,26 @@
 <%-- 
-    Document   : dashboard
-    Created on : Jan 15, 2014, 4:39:53 PM
+    Document   : common_Social
+    Created on : Feb 12, 2014, 11:24:46 PM
     Author     : vasilis
 --%>
+
 <%@ page import ="java.sql.*" %>
 <link rel="stylesheet" type="text/css" href="css/style.css" />
 <%  request.setCharacterEncoding("UTF-8");
-    String fname=  session.getAttribute("UserName").toString();
+    
     
    Class.forName("com.mysql.jdbc.Driver");
    Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/Users?useUnicode=true&characterEncoding=UTF-8","root","%so11333");
     
     Statement st = conn.createStatement();
     
-    int category = 0;
+    int category = 2;
     ResultSet rs;
-    rs = st.executeQuery("select * from stickers where Username = '"+ fname +"' && Category ='"+ category +"' ");
+    rs = st.executeQuery("select * from stickers where Category ='"+ category +"' ");
     
     while(rs.next()){
         String id = rs.getString(1);
+        String fname = rs.getString(2);
         String sticker = rs.getString(3);
     
     
@@ -32,24 +34,19 @@
         
     <body>
         
-        <p> <%= id %>.  <%=sticker%>  </p>
+        <p> <%= id %>.  <%=sticker%> by <%=fname%> </p>
    
 
 
 <%  }  %>
 
-       <p> <a href='post_sticker.jsp'>Post a sticker </a>    </p>
-       <p> <a href='logout.jsp'>Log out</a>  </p>
-
-
-      <form action="Delete_Data" method="post">
-         <input name="delete" required="" placeholder="Enter the ID post to delete" id="delete" style="width:500px;height:50px;background-color:#D0F18F;color:#000000;font:24px/30px cursive;"   /> 
-         <br />
-        <input type="submit" value="Submit" style="background-color:#53760D;color:#D0F18F;" />
-      </form>
-       
-       <br />
-       <h1> <a href='success.jsp'> Return to menu </a>  </h1>
+    <br /><br />
+    <h10> If you want your private space and add your own stickers you should <a href="login_form.jsp">sign in </a> </h10>
+    <br />
+    <h10> ....and if you haven't <a href="reg.jsp">Register </a> yet...Now it's the time.. </h10>
+    <br />
+    <h10> back to  <a href="index.jsp">categories </a> </h10>
+      
 
       <div id="footer">
             <h8>Web Designed by Vasilis Soutis  &copy 2014 </h8>
@@ -59,3 +56,4 @@
  
         
 </html>
+

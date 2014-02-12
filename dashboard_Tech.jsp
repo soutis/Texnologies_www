@@ -1,24 +1,26 @@
 <%-- 
-    Document   : dashboard
-    Created on : Jan 15, 2014, 4:39:53 PM
+    Document   : dashboard_Tech
+    Created on : Feb 12, 2014, 9:41:16 PM
     Author     : vasilis
 --%>
+
 <%@ page import ="java.sql.*" %>
 <link rel="stylesheet" type="text/css" href="css/style.css" />
 <%  request.setCharacterEncoding("UTF-8");
-    String fname=  session.getAttribute("UserName").toString();
+    
     
    Class.forName("com.mysql.jdbc.Driver");
    Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/Users?useUnicode=true&characterEncoding=UTF-8","root","%so11333");
     
     Statement st = conn.createStatement();
     
-    int category = 0;
+    int category = 3;
     ResultSet rs;
-    rs = st.executeQuery("select * from stickers where Username = '"+ fname +"' && Category ='"+ category +"' ");
+    rs = st.executeQuery("select * from stickers where Category ='"+ category +"' ");
     
     while(rs.next()){
         String id = rs.getString(1);
+        String fname = rs.getString(2);
         String sticker = rs.getString(3);
     
     
@@ -32,7 +34,7 @@
         
     <body>
         
-        <p> <%= id %>.  <%=sticker%>  </p>
+        <p> <%= id %>.  <%=sticker%> by <%=fname%> </p>
    
 
 
@@ -40,15 +42,15 @@
 
        <p> <a href='post_sticker.jsp'>Post a sticker </a>    </p>
        <p> <a href='logout.jsp'>Log out</a>  </p>
-
-
-      <form action="Delete_Data" method="post">
+       
+       <form action="Delete_Tech" method="post">
          <input name="delete" required="" placeholder="Enter the ID post to delete" id="delete" style="width:500px;height:50px;background-color:#D0F18F;color:#000000;font:24px/30px cursive;"   /> 
          <br />
         <input type="submit" value="Submit" style="background-color:#53760D;color:#D0F18F;" />
       </form>
-       
-       <br />
+
+
+      <br />
        <h1> <a href='success.jsp'> Return to menu </a>  </h1>
 
       <div id="footer">
@@ -59,3 +61,4 @@
  
         
 </html>
+

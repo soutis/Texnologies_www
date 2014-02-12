@@ -8,7 +8,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" type="text/css" href="css/style.css" /> 
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         
@@ -44,6 +44,15 @@
             </center>
         </form>
         
+         
+        <div id="footer">
+            <h8>Web Designed by Vasilis Soutis  &copy 2014 </h8>
+        </div>
+         
     </body>
+    
+    
 </html>  
+
+
 
