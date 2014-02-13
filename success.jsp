@@ -14,6 +14,7 @@
 <!DOCTYPE html>
 <html>
     <link rel="stylesheet" type="text/css" href="css/style.css" />
+   
     
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -45,7 +46,7 @@
     <body>
         
 
-        <p>Welcome <%=session.getAttribute("UserName")%></p>
+        <p>  Welcome <%=session.getAttribute("UserName")%></p>
         
         
 <script LANGUAGE="JavaScript">
@@ -110,20 +111,43 @@ return unescape(document.cookie.substring(offset, endstr));
 <p>
 <script LANGUAGE="JavaScript">
 <!-- Begin
-document.write("You are here for <b>" + amt() + " times.");
+document.write("  You are here for <b>" + amt() + " times.");
 // End -->
 </script> 
 </p>
  
         <input type="button" onclick="DeleteCookie('count')" value="Reset Cookie Counter"/>
         
-        <h1> <a href='dashboard.jsp'> Check your private dashboard </a>  </h1> 
-        <h1> <a href='dashboard_News.jsp'> Check the News dashboard </a>  </h1>
-        <h1> <a href='dashboard_Social.jsp'> Check the Social dashboard </a>  </h1>
-        <h1> <a href='dashboard_Tech.jsp'> Check the Tech dashboard </a>  </h1>
-        <h1> <a href='dashboard_Sports.jsp'> Check the Sports dashboard </a>  </h1>
-        <h1> <a href='post_sticker.jsp'>Post a sticker </a>    </h1>    
-        <p><a href='logout.jsp'>Log out</a> </p>
+        <br /><br />
+         
+       <div id="right" >
+         <a href="post_sticker.jsp" class="classname" >Post</a>
+        </div>
+        <a href="logout.jsp" class="classname"  >Logout</a> 
+            
+       
+        <cnt>
+        <div id="stick" >
+           <aside class="sticker pink"><h9> Menu </h9></aside> 
+        </div>
+        </cnt>
+    
+            
+        <div id="stick">
+            
+          <aside class="sticker yellow"><h9> <a href='dashboard.jsp'>Private</a>  </h9></aside>
+          <aside class="sticker cyan"><h9> <a href='dashboard_News.jsp'>News</a>  </h9></aside>
+          <aside class="sticker green"><h9> <a href='dashboard_Social.jsp'>Social</a>  </h9></aside>
+          <aside class="sticker yellow"><h9> <a href='dashboard_Tech.jsp'>Tech</a>  </h9></aside>
+          <aside class="sticker pink"><h9> <a href='dashboard_Sports.jsp'>Sports</a>  </h9></aside>
+          
+          
+       </div>
+        
+        
+         
+           
+        
         
         
         <div id="footer">

@@ -67,8 +67,8 @@ public class RRegistration extends HttpServlet{
          
           ResultSet rs;
           
-          rs = st.executeQuery("select * from users where UserName='" +  uname + "'");
           
+          rs = st.executeQuery("select * from users where UserName = '"+ uname +"' || email ='"+ email +"' ");
           
           while(rs.next()){
               count++;

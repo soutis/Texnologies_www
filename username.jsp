@@ -12,7 +12,7 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     </head>
     <body>
-       <p> Username is already used.Register with another one.. <a href='reg.jsp'>Go to Register</a> </p>
+       <p> Username or email is already used.Register with another one.. <a href='reg.jsp'>Go to Register</a> </p>
        
        <div id="footer">
             <h8>Web Designed by Vasilis Soutis  &copy 2014 </h8>

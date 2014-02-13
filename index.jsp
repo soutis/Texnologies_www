@@ -37,7 +37,13 @@
            <button type="submit" class="btn btn-default">Submit</button>
         </form>
         
-        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+      
+        <br /> <br />
+        <div id="border"><p>If you want immediate and unlimited access to useful information..</p>
+                         <p>If you want private space to organize your time...Blackboard is what you were looking for..</p>
+                         <p>p.s if you are not convinced try the above categories...</p>
+        
+    </div>
         
         
        <div id="stick">

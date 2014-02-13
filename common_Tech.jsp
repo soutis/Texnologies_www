@@ -34,18 +34,19 @@
         
     <body>
         
-        <p> <%= id %>.  <%=sticker%> by <%=fname%> </p>
+       <div id="border">
+             <p> <%= id %>.  <%=sticker%> by <%=fname%> </p>
+        </div>
    
 
 
 <%  }  %>
 
-    <br /><br />
-    <h10> If you want your private space and add your own stickers you should <a href="login_form.jsp">sign in </a> </h10>
-    <br />
-    <h10> ....and if you haven't <a href="reg.jsp">Register </a> yet...Now it's the time.. </h10>
-    <br />
-    <h10> back to  <a href="index.jsp">categories </a> </h10>
+    <br /> <br />
+    <div id="border"><p> If you want your private space and add your own stickers you should <a href="login_form.jsp">sign in </a> 
+        ....and if you haven't <a href="reg.jsp">Register </a> yet...Now it's the time..
+        back to  <a href="index.jsp">main page </a></p>
+    </div>
       
 
       <div id="footer">

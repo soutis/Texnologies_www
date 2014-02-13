@@ -5,6 +5,17 @@
 --%>
 <%@ page import ="java.sql.*" %>
 <link rel="stylesheet" type="text/css" href="css/style.css" />
+<%  
+    if ((session.getAttribute("UserName") == null) || (session.getAttribute("UserName") == "")) {
+%>
+
+You are not logged in<br/>
+<a href="index.jsp">Please Login</a>
+
+<%
+    }else{
+%>
+
 <%  request.setCharacterEncoding("UTF-8");
     String fname=  session.getAttribute("UserName").toString();
     
@@ -24,6 +35,8 @@
     
 %>    
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
+
+
 <!DOCTYPE html>
 <html>
     <link rel="stylesheet" type="text/css" href="css/style.css" />
@@ -32,14 +45,19 @@
         
     <body>
         
-        <p> <%= id %>.  <%=sticker%>  </p>
+        <div id="border">
+             <p> <%= id %>.  <%=sticker%> </p>
+        </div>
    
 
 
-<%  }  %>
+<%  }  %>  
 
-       <p> <a href='post_sticker.jsp'>Post a sticker </a>    </p>
-       <p> <a href='logout.jsp'>Log out</a>  </p>
+       <div id="right" >
+         <a href="post_sticker.jsp" class="classname" >Post</a>
+        </div>
+        <a href="logout.jsp" class="classname"  >Logout</a> 
+        <br />
 
 
       <form action="Delete_Data" method="post">
@@ -49,7 +67,11 @@
       </form>
        
        <br />
-       <h1> <a href='success.jsp'> Return to menu </a>  </h1>
+       <cnt>
+       <div id="stick">
+          <aside class="sticker pink"><h9> <a href='success.jsp'>Menu</a>  </h9></aside> 
+       </div>
+       </cnt>
 
       <div id="footer">
             <h8>Web Designed by Vasilis Soutis  &copy 2014 </h8>
@@ -59,3 +81,5 @@
  
         
 </html>
+
+<% } %>
