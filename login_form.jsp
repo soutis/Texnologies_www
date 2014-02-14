@@ -43,6 +43,11 @@
             </table>
             </center>
         </form>
+         
+         
+       <div id="border">
+          <p> back to  <a href="index.jsp">main page </a></p>
+       </div>
         
          
         <div id="footer">

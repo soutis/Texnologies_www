@@ -53,6 +53,11 @@
             </table>
             </center>
         </form>
+        
+       <div id="border">
+          <p> back to  <a href="index.jsp">main page </a></p>
+       </div>
+        
         <div id="footer">
             <h8>Web Designed by Vasilis Soutis  &copy 2014 </h8>
         </div>

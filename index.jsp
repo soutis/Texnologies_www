@@ -24,15 +24,15 @@
          
          <div class="btn-group" >
             
-            <a class="btn btn-success btn-large "   href="http://83.212.122.201:8080/Final_project/login_form.jsp">   Login </a>
-            <a class="btn btn-success btn-large "   href="http://83.212.122.201:8080/Final_project/reg.jsp" > Registration </a>
+             <a class="btn btn-success btn-large "   href="http://83.212.122.201:8080/Final_project/login_form.jsp">Login </a>
+             <a class="btn btn-success btn-large "   href="http://83.212.122.201:8080/Final_project/reg.jsp" >Register </a>
             
          </div>  
         
         
-        <form class="navbar-form navbar-right" role="search">
+        <form class="navbar-form navbar-right" role="search" action="search.jsp">
            <div class="form-group">
-             <input type="text" class="form-control" placeholder="Search">
+             <input name="search" required="" class="form-control" placeholder="Search a user">
            </div>
            <button type="submit" class="btn btn-default">Submit</button>
         </form>
@@ -41,7 +41,7 @@
         <br /> <br />
         <div id="border"><p>If you want immediate and unlimited access to useful information..</p>
                          <p>If you want private space to organize your time...Blackboard is what you were looking for..</p>
-                         <p>p.s if you are not convinced try the above categories...</p>
+                         <p>p.s if you are not convinced try the categories below...</p>
         
     </div>
         
