@@ -10,7 +10,7 @@
 %>
 
 You are not logged in<br/>
-<a href="index.jsp">Please Login</a>
+<a href="login_form.jsp">Please Login</a>
 
 <%
     }else{
